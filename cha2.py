@@ -1,3 +1,7 @@
+# Realize um sistema que gere boletos, neste sistema, você irá inserir o número do banco que será de exemplo: 341-7, 
+# o número de um boleto que será um número aleatório
+# entre 1000 e 10000, e incorpore dentro desta linha também, mês, dia, e ano, acrescentar 8 vezes o número 0 e no final acrescentar o valor do boleto.
+
 from datetime import date
 import random
 

@@ -1,3 +1,9 @@
+#  Monte um sistema financeiro onde você tem que inserir o cadastro de novos funcionários, 
+# a cada 3 funcionários inseridos, o salário de todos eles sobem 5%
+# valor, de maneira incremental. Quando o sistema perceber que você inseriu 10 funcionários, 
+# pausar o programa, e printar todos os funcionários, e sortear um funcionário
+# para que esse seja premiado e receba o valor de 10% do seu salário de bônus.
+
 import random
 
 class Cadastro:

@@ -1,3 +1,6 @@
+# Faça um programa que insira um valor em reais, e faça ele converter o valor para dólar, mostrando quantos
+# dólares podem ser comprados com aquela quantia.
+
 def main():
     def conversor(value):
         return value / 5.30
