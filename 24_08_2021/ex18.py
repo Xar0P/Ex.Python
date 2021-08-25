@@ -2,10 +2,11 @@
 # Faça com que o usuário digite um valor de entrada 
 # para cadastrar o código de um banco, e logo após coloque o valor da despesa, 
 # seguido de uma descrição da despesa, e da data que o item foi criado.
+
 import tkinter as tk
 from tkinter import ttk
 from datetime import date
-from PIL import ImageTk, Image
+from PIL import ImageTk, Image # pip install Pillow
 import csv
 
 # class Funcionario:
@@ -190,18 +191,17 @@ if __name__ == '__main__':
     app.mainloop()
 
     with open('24_08_2021/Despesas.csv','w',newline='',encoding='UTF-8') as csvfile:
-        fieldnames = ['id','banco','valor','descrição','registro']
+        fieldnames = ['ID','BANCO','VALOR','DESCRIÇÃO','REGISTRO']
         writer = csv.DictWriter(csvfile,fieldnames=fieldnames)
 
         writer.writeheader()
         i = 1
         for contrato in app.contratos.contratos:
             writer.writerow({
-                'id':i,
-                'banco':f'{contrato.info_banco[0]} - {contrato.info_banco[1]}',
-                'valor':f'R${contrato.val_despesa:,.2f}',
+                'ID':i,
+                'BANCO':f'{contrato.info_banco[0]} - {contrato.info_banco[1]}',
+                'VALOR':f'R${contrato.val_despesa:,.2f}',
                 'descrição':contrato.desc_despesa,
-                'registro':contrato.data_registro
+                'REGISTRO':contrato.data_registro
             })
-            # file.write(f'{i}º Contrato\n-------------------------------------{contrato}-------------------------------------\n\n')
             i += 1
