@@ -133,7 +133,7 @@ class App(tk.Frame):
         super().__init__(master)
         self.master = master
         self.pack()
-        self._config_window(r"C:\Users\pietr\OneDrive\Imagens\Captura de tela 2021-08-04 151453.png",'Exercício 18','500','400')
+        self._config_window(r"24_08_2021/carpe_diem.png",'Exercício 18','500','400')
         self._criar_widgets()
         self.inside = False
         self.contratos = Contratos()
@@ -249,3 +249,5 @@ if __name__ == '__main__':
                 'REGISTRO':contrato.data_registro
             })
             i += 1
+
+    messagebox.showinfo(title='Exercício 18',message='Arquivo com os dados criado!')
